@@ -1,0 +1,223 @@
+/* переключатор цвета header-main-white - делает шапку светлой. Добавлять к классу .header-main */
+/*Ainmate*/
+.header__menu.header__menu-mobile{
+	display: none;
+	position: absolute;
+	left: 0px;
+    top: 0px;
+    right: 0px;
+}
+.header__menu ul li a, .header__logo,.header__logo img,.header__menu-triger{
+	-webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    transition: all .2s linear;
+}
+.header-main{
+	min-height: 50px;
+	position: fixed;
+	width: 100%;
+	    -webkit-transition: all 400ms ease !important;
+    -moz-transition: all 400ms ease !important;
+    -o-transition: all 400ms ease !important;
+    transition: all 400ms ease !important;
+}
+.header__container{
+	padding: 0 30px;
+	display: block;
+	position: relative;
+}
+.header__logo{
+	float: left;
+	margin: 29px 0;
+    height: 20px;
+}
+.header__logo img{
+	max-height: 20px;
+	max-width: none;
+	width: auto;
+	vertical-align: top;
+}
+.header__logo a{
+	display: block;
+    max-height: 20px;
+}
+.header__menu{
+	float: right;
+}
+.header__menu ul {
+margin-bottom: 0px;
+padding-left: 0px;
+float: right;
+}
+
+.header__menu ul li{
+	list-style-type: none;
+	display: inline-block;
+	float: right;
+}
+.header__menu ul li a{
+	font-size: 13px;
+	text-transform: uppercase;
+	font-family: 'Roboto', sans-serif;
+	float: right;
+	padding: 29px 20px;
+	text-decoration: none;
+	color: #444444;
+}
+.header__menu ul li a:hover{
+	color: #999999!important;
+}
+
+
+
+
+
+
+
+
+.header__menu-triger{
+	display: none;
+    background: transparent;
+    border: none;
+    height: 32px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    outline: none!important;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+	margin: 23px 0;
+    color: #fff;
+    z-index: 999;
+    float: right;
+    width: 40px !important;
+}
+.header__menu-triger:after{
+	content: '';
+    position: absolute;
+    width: 22px;
+    height: 3px;
+    background: #303030;
+    top: 7px;
+    left: 7%;
+    box-shadow: 0 6px 0 #303030, 0 12px 0 #303030;
+}
+
+
+
+
+
+.white-logo{display: none;}
+.black-logo{display: block;}
+.header-main.header-main-white .white-logo{
+	display: block;
+}
+.header-main.header-main-white .header__menu ul li a{
+	color: #e0e0e0;
+}
+.header-main.header-main-white .header__menu ul li a:hover{
+	color: #ffffff
+}
+
+.header-main.header-main-white .black-logo{
+	display: none;
+}
+
+.header-main__scroll{
+    background: black;
+}
+.header-main.header-main__scroll .header__logo .black-logo{
+display: none;
+}
+.header-main.header-main__scroll .header__logo .white-logo{
+display: block;
+}
+.header-main.header-main__scroll .header__logo{
+margin: 19px 0;
+}
+.header-main.header-main__scroll .header__menu ul li a{
+	padding: 19px 20px;
+}
+.header-main.header-main__scroll .header__menu a{
+	color: #a8a8a8;
+}
+
+.header-main__scroll .header__menu-triger{
+    background: transparent;
+    border: none;
+    width: auto;
+    height: 32px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    margin: 13px 0;
+    color: #fff;
+    z-index: 999;
+    float: right;
+    width: 40px !important;
+}
+.header-main__scroll .header__menu-triger:after{
+    background: #ffffff;
+    box-shadow: 0 6px 0 #ffffff, 0 12px 0 #ffffff;
+}
+
+.header-main-white .header__menu-triger:after{
+    background: #ffffff;
+    box-shadow: 0 6px 0 #ffffff, 0 12px 0 #ffffff;
+}
+
+@media screen and (max-width: 993px) {
+	.header__menu{
+		display: none;
+	}
+	.header__menu-triger{
+		display: block;
+	}
+
+}
+
+@media only screen and (max-width: 993px) and (min-width: 768px){
+header .header__container{
+    width: 100%;
+    padding: 0 !important;
+    margin: 0 15px;
+}
+}
+
+@media only screen and (max-width: 767px){
+header .header__container {
+    width: 100%;
+    padding: 0 !important;
+    margin: 0 15px;
+}
+}
+
+
+@media only screen and (max-width: 767px) {
+	.header-main.header-main__scroll .header__logo {
+    	margin: 17px 0;
+	}
+	.header__logo {
+    margin: 17px 0;
+	}
+	.header__menu-triger {
+    margin: 11px 0;
+	}
+	.header-main__scroll .header__menu-triger {
+	margin: 11px 0;
+	}
+}
+.header__menu-wrapper{
+	float: right;
+	margin-right: 14px;
+}
+.header__menu-mobile ul li{
+	width: 100%;
+}
+
+
+
+
