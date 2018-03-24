@@ -7,7 +7,8 @@
     top: 0px;
     right: 0px;
     top: 54px;
-    margin-right: 29px;        
+    margin-right: 29px;   
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);     
 }
 .header__menu ul li a, .header__logo,.header__logo img,.header__menu-triger{
 	-webkit-transition: all .2s linear;
@@ -236,16 +237,27 @@ header .header__container {
 
 .header__menu-mobile ul{
     padding-left: 0px;
+    margin-bottom: 0px;
 }
 .header__menu-mobile ul li{
 	width: 100%;
     list-style-type: none;
 }
+.header__menu-mobile ul li:hover{
+    background-color: rgba(16,16,16,1) !important;
+
+}
+.header__menu-mobile ul li:hover a{
+    color: #d8d8d8;
+}
+
 .header__menu-mobile ul li a{
     font-size: 13px;
     padding: 15px;
     display: inline-block;
     width: 100%;
+    color: #333333;
+    text-decoration: none;
 }
     
 
