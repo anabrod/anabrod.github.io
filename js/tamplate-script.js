@@ -108,3 +108,33 @@ $(document).ready(function(){
         return false; // выключаем стандартное действие
     });
 });
+
+
+
+isMobile = {//Проверяем с какого устройства мы зашли
+Android: function() {
+return navigator.userAgent.match(/Android/i);
+},
+BlackBerry: function() {
+return navigator.userAgent.match(/BlackBerry/i);
+},
+iOS: function() {
+return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+},
+Opera: function() {
+return navigator.userAgent.match(/Opera Mini/i);
+},
+Windows: function() {
+return navigator.userAgent.match(/IEMobile/i);
+},
+any: function() {
+return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+}
+};
+if (isMobile.any()) {//Если действительно с мобильно устройства то запускаем нашу функцию
+itismobile();
+}
+function itismobile(){
+$('video').attr('controls','controls');//Добавляем к тегу видел контролы
+$('#video').get(0).play();//Автозапуск
+}
