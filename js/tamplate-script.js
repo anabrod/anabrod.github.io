@@ -26,3 +26,8 @@ $(document).mouseup(function (e) {
         $(".header__menu-mobile").hide();
     }
 });
+
+
+$(document).scroll(function(){
+  $(".header__menu-mobile").hide();
+});
