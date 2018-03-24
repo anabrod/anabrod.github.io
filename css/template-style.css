@@ -405,4 +405,15 @@ header .header__container {
     margin-top: 75px
 }
 
+#particles-js {  width: 100%;
+      height: 500px;}
+
+
+
+      /* ------------------------------------ */
+
+      canvas{
+  display:block;
+  vertical-align:bottom;
+}
 
