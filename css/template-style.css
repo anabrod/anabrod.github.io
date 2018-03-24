@@ -1,11 +1,13 @@
 /* переключатор цвета header-main-white - делает шапку светлой. Добавлять к классу .header-main */
 /*Ainmate*/
-.header__menu.header__menu-mobile{
+.header__menu-mobile{
 	display: none;
 	position: absolute;
 	left: 0px;
     top: 0px;
     right: 0px;
+    top: 54px;
+    margin-right: 29px;        
 }
 .header__menu ul li a, .header__logo,.header__logo img,.header__menu-triger{
 	-webkit-transition: all .2s linear;
@@ -169,6 +171,18 @@ margin: 19px 0;
     box-shadow: 0 6px 0 #ffffff, 0 12px 0 #ffffff;
 }
 
+
+
+.header__menu-wrapper ul li:not(:last-child) a{
+    border-bottom: 1px solid #ededed;
+}
+
+.header__menu-wrapper ul{
+    background-color: rgba(255,255,255,1) !important;
+}
+
+
+
 @media screen and (max-width: 993px) {
 	.header__menu{
 		display: none;
@@ -210,14 +224,38 @@ header .header__container {
 	margin: 11px 0;
 	}
 }
+.arrow-right {
+    display: inline-block;
+    float: right;
+    font-size: 17px;
+
+}
 .header__menu-wrapper{
 	float: right;
 	margin-right: 14px;
 }
+
+.header__menu-mobile ul{
+    padding-left: 0px;
+}
 .header__menu-mobile ul li{
 	width: 100%;
+    list-style-type: none;
 }
+.header__menu-mobile ul li a{
+    font-size: 13px;
+    padding: 15px;
+    display: inline-block;
+    width: 100%;
+}
+    
 
+@media screen and (min-width: 993px) {
+    .header__menu-mobile{
+        display: none!important;
+    }
+
+}
 
 
 

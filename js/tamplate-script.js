@@ -15,6 +15,14 @@ $(function(){
 
  $(document).ready(function() {
 $(".header__menu-triger").click(function () {
-$(".header__menu.header__menu-mobile").toggle('slow')
+$(".header__menu-mobile").slideToggle('slow')
 });
+});
+
+
+$(document).mouseup(function (e) {
+    var container = $(".header__menu-wrapper");
+    if (container.has(e.target).length === 0){
+        $(".header__menu-mobile").hide();
+    }
 });
