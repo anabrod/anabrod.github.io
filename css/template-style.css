@@ -1,5 +1,40 @@
 /* переключатор цвета header-main-white - делает шапку светлой. Добавлять к классу .header-main */
 /*Ainmate*/
+body {
+ font-size: 100%; /* начните с гибкой исходной базы, более подробно об этом написано в следующем разделе */
+}
+ 
+h1 {
+ font-size: 2.5em;
+}
+ 
+@media screen and (max-width: 50em) {
+ h1 {
+ font-size:2em;
+ }
+}
+ 
+@media screen and (max-width: 40em) {
+ h1 {
+ font-size:1.5em;
+ }
+}
+ 
+@media screen and (max-width: 30em) {
+ h1 {
+ font-size:1.2em;
+ }
+}
+.video-container h1{
+    font-weight: 500;
+    color: #28244f;}
+.video-container hr {
+    width: 200px;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    border: 0;
+    border-top: 6px solid #28243f;
+}
 .header__menu-mobile{
 	display: none;
 	position: absolute;
@@ -15,6 +50,11 @@
     -moz-transition: all .2s linear;
     transition: all .2s linear;
 }
+
+.content{
+    position: relative;
+}
+
 .header-main{
 	min-height: 50px;
 	position: fixed;
@@ -23,6 +63,7 @@
     -moz-transition: all 400ms ease !important;
     -o-transition: all 400ms ease !important;
     transition: all 400ms ease !important;
+    z-index: 999999;
 }
 .header__container{
 	padding: 0 30px;
@@ -271,3 +312,95 @@ header .header__container {
 
 
 
+.homepage-hero-module {
+    border-right: none;
+    border-left: none;
+    position: relative;
+}
+.no-video .video-container video,
+.touch .video-container video {
+    display: none;
+}
+.no-video .video-container .poster,
+.touch .video-container .poster {
+    display: block !important;
+}
+.video-container {
+    position: relative;
+    bottom: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background: #000;
+}
+.video-container .poster img {
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+}
+.video-container .filter {
+    z-index: 100;
+    position: absolute;
+    width: 100%;
+}
+.video-container video {
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
+}
+.video-container video.fillWidth {
+    width: 100%;
+}
+
+
+.title-container {
+    z-index: 1000;
+    position: absolute;
+
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%)
+}
+
+.text-thin {
+    font-weight: 100;
+}
+.text-white {
+    color: #fff !important;
+}
+
+@keyframes bouncing{
+  0%  { bottom: 0; box-shadow: 0 0 5px rgba(0,0,0,0.5); }
+  100% { bottom: 5px; box-shadow: 0 50px 50px rgba(0,0,0,0.1); }
+}
+
+.next-button:hover{
+
+ animation: bouncing 0.5s cubic-bezier(0.1,0.25,0.1,1) 0s infinite alternate both paused; 
+  }
+.next-button { 
+ animation: bouncing 0.5s cubic-bezier(0.1,0.25,0.1,1) 0s infinite alternate both; 
+ font-size: 50px;
+ color: #27233e;
+  display: inline-block;
+  position: absolute;
+  background: transparent;
+  border-radius: 200px;
+
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.next-button-wrapper{
+    position: relative;
+    margin-top: 75px
+}
