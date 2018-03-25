@@ -405,6 +405,7 @@ header .header__container {
     width: 100%;
     height: 100%;
     position: absolute;
+    background: rosybrown;
   }
 .hamepage-main{
     width: 100%;
@@ -446,4 +447,39 @@ h1 { font-size: 3.5em;color: #27233e }
 h2 {
   color: #27233e;
   font-size: 2em;
+}
+
+.main-infograf__warpper{
+margin: 100px 0;
+}
+.infograf__item path{
+    fill: #27233e;
+}
+.infograf__item svg{
+     font-size: 20px;
+     height: 30px
+}
+.infograf__item-icon{
+    text-align: center;
+}
+.infograf__item-title{
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+}
+.infograf__item-text{
+        font-size: 14px;
+    text-align: center;
+    margin-top: 13px;
+   }
+
+
+
+
+@media screen and (max-width: 767px) {
+    .infograf__item{
+        margin-bottom: 50px;
+    }
+
 }
