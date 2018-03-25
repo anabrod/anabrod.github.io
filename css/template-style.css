@@ -387,11 +387,8 @@ header .header__container {
  font-size: 50px;
  color: #27233e;
   display: inline-block;
-  position: absolute;
   background: transparent;
   border-radius: 200px;
-
-
     position: absolute;
     left: 50%;
     top: 50%;
@@ -408,12 +405,10 @@ header .header__container {
     width: 100%;
     height: 100%;
     position: absolute;
-    background: green;
   }
 .hamepage-main{
     width: 100%;
     position: relative;
-    background: red;
     height: 100vh;
 }
 
@@ -424,3 +419,31 @@ header .header__container {
   vertical-align:bottom;
 }
 
+@keyframes bouncing{
+100%{ top: 20px; }
+ 0%  { top: 0; }
+}
+
+.ball {
+    animation: bouncing 0.5s 0s infinite alternate both;
+    font-size: 50px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #27233c;
+
+}
+.ball:hover{
+    animation: bouncing 0.5s 0s infinite alternate both paused;
+    color: #353346;
+}
+h1,h2 {
+  font-weight: 200;
+  margin: 0.4em 0;
+}
+h1 { font-size: 3.5em;color: #27233e }
+h2 {
+  color: #27233e;
+  font-size: 2em;
+}
