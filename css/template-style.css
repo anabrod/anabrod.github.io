@@ -532,3 +532,16 @@ margin: 100px 0;
   display: block;
   max-width: 100%;
 }
+@media screen and (max-width: 767px) {
+    .grid-sizer,.grid-item{
+        width: 50%;
+    }
+
+}
+@media screen and (max-width: 575px) {
+    .grid-sizer,.grid-item{
+        width: 100%;
+    }
+
+}
+
