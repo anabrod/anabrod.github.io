@@ -176,9 +176,8 @@ window.onload = function() {
   document.body.appendChild(css);
 };
 
-
-
-// external js: masonry.pkgd.js, imagesloaded.pkgd.js
+ $(document).ready(function() {
+  // external js: masonry.pkgd.js, imagesloaded.pkgd.js
 
 // init Masonry
 var $grid = $('.grid').masonry({
@@ -190,3 +189,7 @@ var $grid = $('.grid').masonry({
 $grid.imagesLoaded().progress( function() {
   $grid.masonry();
 });  
+});
+
+
+
