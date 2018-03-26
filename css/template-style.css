@@ -427,12 +427,13 @@ header .header__container {
 
 .ball {
     animation: bouncing 0.5s 0s infinite alternate both;
-    font-size: 50px;
+    width: 50px;
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
     color: #27233c;
+    fill: #27233c;
 
 }
 .ball:hover{
@@ -517,8 +518,44 @@ margin: 100px 0;
   clear: both;
 }
 
-/* ---- .grid-item ---- */
+/* ---- .grid-item ---- * тут ниже для внутренней стр, а ниже для главной/
 
+/*.grid-sizer,
+.grid-item {
+  width: 33.333%;
+}
+
+.grid-item {
+  float: left;
+}
+
+.grid-item img {
+  display: block;
+  max-width: 100%;
+}
+@media screen and (max-width: 767px) {
+    .grid-sizer,.grid-item{
+        width: 50%;
+    }
+
+}
+@media screen and (max-width: 575px) {
+    .grid-sizer,.grid-item{
+        width: 100%;
+    }
+
+}
+*/
+/* ---- .grid-item v2 ---- */
+
+
+.grid-item-img{
+background-position: center center;
+background-size: cover;
+background-repeat: no-repeat;
+width: 100%;
+height: 350px;
+}
 .grid-sizer,
 .grid-item {
   width: 33.333%;
