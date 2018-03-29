@@ -116,6 +116,14 @@ particlesJS.load('.particles-js', 'js/conf.json', function() {
 });
 });
 
+$(function(){
+/* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
+particlesJS.load('.particles-js2', 'js/conf.json', function() {
+  console.log('callback - particles.js config loaded');
+});
+});
+
+
 
 
 
