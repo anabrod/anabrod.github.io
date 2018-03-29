@@ -452,18 +452,18 @@ margin: 100px 0;
     width: 100%;
     position: relative;
     min-height: 300px;
-
+}
+.page__topblock-wrapper .particles{
+    z-index: -1;
 }
 .page__topblock-wrapper h1, .page__topblock-wrapper h2{
     color: white;
     }
 .topblock-pagi{
     color: white;
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    text-align: center;
     z-index: 2;
+    margin-top: 34px;
 }
 .topblock-pagi span{
     margin: 0px 10px;
@@ -476,6 +476,9 @@ margin: 100px 0;
     color: #999999;
 }
 
-
+.topblock__title{
+    padding-top: 90px;
+    text-align: center;
+}
 
 
