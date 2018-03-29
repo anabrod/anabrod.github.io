@@ -111,7 +111,7 @@ $(document).ready(function(){
 
 $(function(){
 /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
-particlesJS.load('#particles-js', 'js/conf.json', function() {
+particlesJS.load($(#particles-js), 'js/conf.json', function() {
   console.log('callback - particles.js config loaded');
 });
 });
