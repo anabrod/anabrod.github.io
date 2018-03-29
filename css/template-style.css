@@ -28,7 +28,7 @@ h1 {
     margin-right: 29px;   
     box-shadow: 0 0 10px rgba(0,0,0,0.5);     
 }
-.grid li:hover .project__title span, .header__menu ul li a, .header__logo,.header__logo img,.header__menu-triger{
+.grid .particles, .grid li:hover .project__title span, .header__menu ul li a, .header__logo,.header__logo img,.header__menu-triger{
 	-webkit-transition: all .2s linear;
     -moz-transition: all .2s linear;
     transition: all .2s linear;
@@ -433,10 +433,10 @@ margin: 100px 0;
 }
 
 .grid .particles{
-    display: none;
+    opacity: 0;
 }
 .grid li:hover .particles{
-    z-index: -1
+    z-index: -1;
     opacity: 0.3;
     display: block!important;
 }
