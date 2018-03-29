@@ -429,15 +429,6 @@ margin: 100px 0;
     border-width:0 0 2px;
 
 }
-.grid .particles{
-    display: none;
-}
-.grid li:hover  .particles{
-    display: block;
-    opacity: 0.3;
-}
-
-
 
 
 
