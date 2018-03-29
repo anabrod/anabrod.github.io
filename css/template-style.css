@@ -434,10 +434,10 @@ margin: 100px 0;
 
 .grid .particles{
     opacity: 0;
-}
-.grid .particles:hover {
     z-index: -1;
-    opacity: 0.3;
+}
+.grid li:hover .particles {
+    opacity: 0.3!important;
 }
 
 
