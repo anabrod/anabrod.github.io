@@ -26,7 +26,7 @@ var pJS = function(tag_id, params){
           value_area: 800
         }
       },
-      color: {'#
+      color: {
         value: '#cc00ff'
       },
       shape: {
