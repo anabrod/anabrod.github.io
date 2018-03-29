@@ -429,10 +429,10 @@ margin: 100px 0;
     border-width:0 0 2px;
 
 }
-.grid #particles-js{
+.grid .particles-js{
     display: none;
 }
-.grid li:hover #particles-js{
+.grid li:hover .particles-js{
     display: block;
     opacity: 0.3;
 }
