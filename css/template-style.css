@@ -28,7 +28,7 @@ h1 {
     margin-right: 29px;   
     box-shadow: 0 0 10px rgba(0,0,0,0.5);     
 }
-.grid .particles, .grid li:hover .project__title span, .header__menu ul li a, .header__logo,.header__logo img,.header__menu-triger{
+.grid li, .grid .particles, .header__menu ul li a, .header__logo,.header__logo img,.header__menu-triger{
 	-webkit-transition: all .2s linear;
     -moz-transition: all .2s linear;
     transition: all .2s linear;
@@ -443,9 +443,38 @@ margin: 100px 0;
     opacity: 0.5!important;
     background: rgba(3, 1, 22, 0.8)!important;
 } 
+.grid li:hover {
+    padding-top: 70px;
+}
 
 
+.page__topblock-wrapper{
+    width: 100%;
+    position: relative;
+    min-height: 300px;
 
+}
+.page__topblock-wrapper h1, .page__topblock-wrapper h2{
+    color: white;
+    }
+.topblock-pagi{
+    color: white;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+.topblock-pagi span{
+    margin: 0px 10px;
+}
+.topblock-pagi a{
+    color: white;
+    text-decoration: none;
+}
+.topblock-pagi a:hover{
+    color: #999999;
+}
 
 
 

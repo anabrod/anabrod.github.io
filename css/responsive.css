@@ -9,6 +9,9 @@
     .grid li{
         padding: 40px;
     }
+    .grid li:hover{
+        padding: 70px;
+    }
 }
 @media screen and (max-width: 993px) {
     .header__menu{
@@ -36,6 +39,9 @@
     }
      .grid li{
         padding: 30px;
+    }
+    .grid li:hover{
+        padding: 50px;
     }
 }
 @media only screen and (max-width: 993px) and (min-width: 768px){
