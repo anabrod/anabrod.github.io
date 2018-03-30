@@ -122,6 +122,15 @@ window.onload = function() {
   document.body.appendChild(css);
 };
 
+$(document).ready(function(){   
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 300) {
+            $('#back-top').fadeIn();
+        } else {
+            $('#back-top').fadeOut();
+        }
+    });
+});
 
 
 

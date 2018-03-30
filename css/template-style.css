@@ -28,7 +28,7 @@ h1 {
     margin-right: 29px;   
     box-shadow: 0 0 10px rgba(0,0,0,0.5);     
 }
-.grid li, .grid .particles, .header__menu ul li a, .header__logo,.header__logo img,.header__menu-triger{
+#back-top a, .social__item svg, .grid li, .grid .particles, .header__menu ul li a, .header__logo,.header__logo img,.header__menu-triger{
 	-webkit-transition: all .2s linear;
     -moz-transition: all .2s linear;
     transition: all .2s linear;
@@ -492,4 +492,61 @@ margin: 100px 0;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+.footer__container{
+    background-color: rgba(245,245,245,1);
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.footer__text{
+    color: black;
+    text-align: center;
+}
+.footer__logo img{
+    height: 70px;
+    display: inline-block;
+}
+.footer__logo{
+    margin-bottom: 20px;
+}
+.social__item{
+display: inline-block;
+    margin: 0px 6px;
+}
+.social__item svg{
+    fill: #333333
+}
+.social__item:hover svg{
+    fill: #d8d8d8;
+}
+
+#back-top {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    z-index: 99999;
+    margin: 0;
+    display: none;
+}
+#back-top a{
+    height: 40px;
+    display: block;
+    width: 40px;
+    border-radius: 100px;
+    background: black;
+    position: relative;
+}
+#back-top a:hover{
+    background: rgba(0,0,0,0.25);
+}
+
+#back-top svg{
+    height: 22px;
+    width: auto;
+    fill: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
