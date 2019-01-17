@@ -113,6 +113,17 @@ html, body{
     animation: go-left-right2 1.4s ease-in-out infinite alternate;
     -webkit-animation: go-left-right2 1.4s ease-in-out infinite alternate;
 }
+.dimon__outer{
+  position: absolute;
+  bottom: 300px;
+  z-index: 999;
+}
+
+img.dimon{
+  animation: go-dimon 1s ease-in-out infinite alternate;
+  -webkit-animation: go-dimon 1s ease-in-out infinite alternate;
+}
+
 img{
     height: auto;
     position: absolute;
@@ -193,3 +204,25 @@ img{
       top: calc(10px);
     }
   }
+
+
+  
+   /* Современные браузеры, кроме Chrome, Opera, Safari */
+ @keyframes go-dimon {   /* назовём анимацию: "go-left-right" */
+  from {
+    transform: rotate(0deg);               /* от: left: 0px */
+  }
+  to {
+    top: calc(360px); /* до: left: 100%-50px */
+  }
+}
+
+/* Префикс для Chrome, Opera, Safari */
+@-webkit-keyframes go-dimon {
+  from {
+    transform: rotate(0deg);               /* от: left: 0px */
+  }
+  to {
+    top: calc(360px); /* до: left: 100%-50px */
+  }
+}

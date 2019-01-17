@@ -17,7 +17,11 @@
     </script>
 </head>
 <body>
-
+    <div class="dimon__outer">
+        <div data-wow-delay="2s" class="img1 wow bounceInLeft">
+            <img class="dimon" src="img/dimon.png" alt="" srcset="">
+        </div>                
+</div>
 <div class="wrapper">
 
         <div class="img1__outer">
@@ -61,7 +65,7 @@
 function windowSize(){
   var winBr = $(window).width();
   if(winBr<1400){
-      $('img').css('width', winBr/2 - 30);
+      $('.img').css('width', winBr/2 - 30);
   }
 }
 
