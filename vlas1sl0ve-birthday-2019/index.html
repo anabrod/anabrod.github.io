@@ -2,11 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width">
 
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-   
+    <title>Тут нет никакого поздравления</title>
+<script src="jquery.js"></script>
+ 
+The integrity and crossorigin attributes are u
+    <script src="js.js"></script>
     <script src="wow.min.js"></script>
     <script>
         window.onload = function() {
@@ -24,6 +27,7 @@
                     <img class="img" src="img/img1.jpg" alt="" srcset="">
                 </div>                
         </div>
+
         <div class="img3__outer">
                 <div data-wow-delay="2.6s" class="img3 wow bounceInLeft">
                     <img class="img" src="img/img3.jpg" alt="" srcset="">
@@ -53,6 +57,19 @@
 <link rel="stylesheet" href="animate.css">
 <link rel="stylesheet" href="css.css">
 <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+<script>
+
+
+function windowSize(){
+  var winBr = $(window).width();
+  if(winBr<768){
+      $('img').css('width', winBr/2 - 30);
+  }
+}
+$(window).load(windowSize);
+$(window).resize(windowSize);
+</script>
 </body>
 
 </html>
+
