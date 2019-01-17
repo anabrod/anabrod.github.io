@@ -51,10 +51,16 @@ html, body{
     left: 56%;
     transform: translate(-50%,-50%);
     position: absolute;
+    max-width: 600px;
+    width: 100%;
+    height: 100px;
+    padding-right: 50px;
+    box-sizing: border-box;
+
 }
 .plash{
-    height: 100px;
-    width: 600px;  
+    width: 100%;
+    height: 100%;
     background-color: aquamarine;    
     visibility: visible;
     animation-name: bounceInLeft;
@@ -63,43 +69,55 @@ html, body{
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 .img1__outer{
-    top: 44%;
-    left: 79%;
+    top: 16vh;
+    left: 58%;
     transform: translate(-50%,-50%);
     position: absolute;   
+   
 }
 .img1 img{
-    transform: rotate(45deg);
+     transform: rotate(45deg);
+       animation: go-left-right 1s ease-in-out infinite alternate;
+    -webkit-animation: go-left-right 1s ease-in-out infinite alternate;
 }
 .img2__outer{
-    top: 73%;
-    left: 67%;
+    top: 57vh;
+    left: 47vw;
     transform: translate(-50%,-50%);
     position: absolute;   
 }
 .img2 img{
     transform: rotate(25deg);
+    animation: go-left-right2 1.4s ease-in-out infinite alternate;
+    -webkit-animation: go-left-right2 1.4s ease-in-out infinite alternate;
 }
 .img3__outer{
-    top: 67%;
-    left: 30%;
+    top: 57vh;
+    left: 15vw;
     transform: translate(-50%,-50%);
     position: absolute;   
 }
 .img3 img{
     transform: rotate(-30deg);
+    animation: go-left-right 1s ease-in-out infinite alternate;
+    -webkit-animation: go-left-right 1s ease-in-out infinite alternate;
 }
 .img4__outer{
-    top: 31%;
-    left: 53%;
+    top: 16vh;
+    left: 15vw;
     transform: translate(-50%,-50%);
     position: absolute;   
 }
 .img4 img{
     transform: rotate(-30deg);
+    animation: go-left-right2 1.4s ease-in-out infinite alternate;
+    -webkit-animation: go-left-right2 1.4s ease-in-out infinite alternate;
 }
 img{
     height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 
@@ -135,4 +153,43 @@ img{
       text-shadow: 0 0 6px rgba(202, 228, 225, 0.98), 0 0 30px rgba(202, 228, 225, 0.42), 0 0 12px rgba(30, 132, 242, 0.58), 0 0 22px rgba(30, 132, 242, 0.84), 0 0 38px rgba(30, 132, 242, 0.88), 0 0 60px #1e84f2;
     }
   }
- 
+ /* Современные браузеры, кроме Chrome, Opera, Safari */
+ @keyframes go-left-right {   /* назовём анимацию: "go-left-right" */
+    from {
+      top: 0px;               /* от: left: 0px */
+    }
+    to {
+      top: calc(10px); /* до: left: 100%-50px */
+    }
+  }
+
+  /* Префикс для Chrome, Opera, Safari */
+  @-webkit-keyframes go-left-right {
+    from {
+      top: 0px;
+    }
+    to {
+      top: calc(15px);
+    }
+  }
+
+
+   /* Современные браузеры, кроме Chrome, Opera, Safari */
+ @keyframes go-left-right2 {   /* назовём анимацию: "go-left-right" */
+    from {
+      top: 0px;               /* от: left: 0px */
+    }
+    to {
+      top: calc(10px); /* до: left: 100%-50px */
+    }
+  }
+
+  /* Префикс для Chrome, Opera, Safari */
+  @-webkit-keyframes go-left-right2 {
+    from {
+      top: 0px;
+    }
+    to {
+      top: calc(10px);
+    }
+  }
