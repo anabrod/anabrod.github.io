@@ -95,10 +95,6 @@ html, body{
 .img4 img{
     transform: rotate(-30deg);
 }
-img{
-    height: auto;
-    width: 100%;
-}
 
 
 
