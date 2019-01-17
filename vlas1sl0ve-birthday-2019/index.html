@@ -7,14 +7,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Тут нет никакого поздравления</title>
 <script src="jquery.js"></script>
- 
-The integrity and crossorigin attributes are u
     <script src="js.js"></script>
     <script src="wow.min.js"></script>
     <script>
         window.onload = function() {
             new WOW().init();
-};
+        };
       
     </script>
 </head>
@@ -62,12 +60,13 @@ The integrity and crossorigin attributes are u
 
 function windowSize(){
   var winBr = $(window).width();
-  if(winBr<768){
+  if(winBr<1400){
       $('img').css('width', winBr/2 - 30);
   }
 }
-$(window).load(windowSize);
-$(window).resize(windowSize);
+
+
+$(window).on('load resize',windowSize);
 </script>
 </body>
 
