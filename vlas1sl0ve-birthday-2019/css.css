@@ -1,0 +1,122 @@
+html{
+    background: darkblue;
+}
+.text_block{
+    font-size: 47px;
+    color: black;
+    font-family: 'Press Start 2P', cursive;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.title{
+    visibility: visible;
+    animation-delay: 1s;
+    animation-name: bounceInDown;
+    cursor: default;
+}
+.wrapper{
+    height: 100%;
+    width: 100%;
+}
+.plash__outer{
+    top: 52%;
+    left: 56%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+}
+.plash{
+    height: 100px;
+    width: 600px;  
+    background-color: aquamarine;    
+    visibility: visible;
+    animation-name: bounceInLeft;
+}
+.img{
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.img1__outer{
+    top: 44%;
+    left: 79%;
+    transform: translate(-50%,-50%);
+    position: absolute;   
+}
+.img1 img{
+    height: 500px;
+    transform: rotate(45deg);
+}
+.img2__outer{
+    top: 73%;
+    left: 67%;
+    transform: translate(-50%,-50%);
+    position: absolute;   
+}
+.img2 img{
+    height: 450px;
+    transform: rotate(25deg);
+}
+.img3__outer{
+    top: 67%;
+    left: 30%;
+    transform: translate(-50%,-50%);
+    position: absolute;   
+}
+.img3 img{
+    height: 450px;
+    transform: rotate(-30deg);
+}
+.img4__outer{
+    top: 31%;
+    left: 53%;
+    transform: translate(-50%,-50%);
+    position: absolute;   
+}
+.img4 img{
+    height: 450px;
+    transform: rotate(-30deg);
+}
+
+
+
+
+.sign {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .sign__word {
+    color: #f7fbff;
+    -webkit-animation: neon .08s ease-in-out infinite alternate;
+            animation: neon .08s ease-in-out infinite alternate;
+  }
+  
+  /*-- Animation Keyframes --*/
+  @-webkit-keyframes neon {
+    from {
+      text-shadow: 0 0 6px rgba(202, 228, 225, 0.92), 0 0 30px rgba(202, 228, 225, 0.34), 0 0 12px rgba(30, 132, 242, 0.52), 0 0 21px rgba(30, 132, 242, 0.92), 0 0 34px rgba(30, 132, 242, 0.78), 0 0 54px rgba(30, 132, 242, 0.92);
+    }
+    to {
+      text-shadow: 0 0 6px rgba(202, 228, 225, 0.98), 0 0 30px rgba(202, 228, 225, 0.42), 0 0 12px rgba(30, 132, 242, 0.58), 0 0 22px rgba(30, 132, 242, 0.84), 0 0 38px rgba(30, 132, 242, 0.88), 0 0 60px #1e84f2;
+    }
+  }
+  @keyframes neon {
+    from {
+      text-shadow: 0 0 6px rgba(202, 228, 225, 0.92), 0 0 30px rgba(202, 228, 225, 0.34), 0 0 12px rgba(30, 132, 242, 0.52), 0 0 21px rgba(30, 132, 242, 0.92), 0 0 34px rgba(30, 132, 242, 0.78), 0 0 54px rgba(30, 132, 242, 0.92);
+    }
+    to {
+      text-shadow: 0 0 6px rgba(202, 228, 225, 0.98), 0 0 30px rgba(202, 228, 225, 0.42), 0 0 12px rgba(30, 132, 242, 0.58), 0 0 22px rgba(30, 132, 242, 0.84), 0 0 38px rgba(30, 132, 242, 0.88), 0 0 60px #1e84f2;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
