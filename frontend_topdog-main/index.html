@@ -39,7 +39,7 @@
       <div class="container">
         <div class="row header__under-outter align-items-center">
           <div class="col-auto">
-            <img src="img/logo.png" alt="Top Dog Club">
+            <a href="/frontend_topdog-main/"><img src="img/logo.png" alt="Top Dog Club"></a> 
           </div>
           <div class="col-auto header__above-inner d-block d-sm-none">
             <div class="header_icon align-middle" style="background-image:url(img/PhoneCall.svg);"></div>
@@ -202,7 +202,7 @@ Amet minim mollit non deserunt ullamco est sit aliqua dolor do<br>amet sint. Ame
                 <div class="text text_dark" style="margin-top:10px;">
                   Зал оборудован всеми необходимыми современными тренажерами, современное кондиционирование, всегда обновляет воздух в зале, ведь дыхание это залог успешной тренировки.
                 </div>
-                <a class="link_btn text_bold" style="margin-top:20px;" href="#">Перейти</a>
+                <a class="link_btn text_bold" style="margin-top:20px;" href="service1.html">Перейти</a>
               </div>
             </div>
           </div>
@@ -219,7 +219,7 @@ Amet minim mollit non deserunt ullamco est sit aliqua dolor do<br>amet sint. Ame
                 <div class="text text_dark" style="margin-top:10px;">
                   Зал оборудован всеми необходимыми современными тренажерами, современное кондиционирование, всегда обновляет воздух в зале, ведь дыхание это залог успешной тренировки.
                 </div>
-                <a class="link_btn text_bold" style="margin-top:20px;" href="#">Перейти</a>
+                <a class="link_btn text_bold" style="margin-top:20px;" href="service3.html">Перейти</a>
               </div>
             </div>
           </div>
@@ -270,7 +270,7 @@ Amet minim mollit non deserunt ullamco est sit aliqua dolor do<br>amet sint. Ame
                 <div class="text text_dark" style="margin-top:10px;">
                   Отдельная зона для занятий кроссфитом, профессиональные тренера сделают тренировки прогрессивным. Сделай свои тренировки разнообразными!  Испытайте себя, работая с собственным весом и различными видами оборудования, обеспечивающими сопротивление.
                 </div>
-                <a class="link_btn text_bold" style="margin-top:20px;" href="#">Перейти</a>
+                <a class="link_btn text_bold" style="margin-top:20px;" href="service2.html">Перейти</a>
               </div>
             </div>
           </div>
@@ -304,7 +304,7 @@ Amet minim mollit non deserunt ullamco est sit aliqua dolor do<br>amet sint. Ame
                 <div class="text text_dark" style="margin-top:10px;">
                   Наши массажисты помогут восстановить мышцы после спортивных нагрузок, снимут спазмы и болевые упущение, проведут комплекс кинезиотерапии.
                 </div>
-                <a class="link_btn text_bold" style="margin-top:20px;" href="#">Перейти</a>
+                <a class="link_btn text_bold" style="margin-top:20px;" href="service4.html">Перейти</a>
               </div>
             </div>
           </div>
@@ -321,7 +321,7 @@ Amet minim mollit non deserunt ullamco est sit aliqua dolor do<br>amet sint. Ame
                 <div class="text text_dark" style="margin-top:10px;">
                   В мужской и женской раздевалке установлен хамам. Совместные финская сауна и русская баня. Кабинет SPA-процедур.
                 </div>
-                <a class="link_btn text_bold" style="margin-top:20px;" href="#">Перейти</a>
+                <a class="link_btn text_bold" style="margin-top:20px;" href="service4.html">Перейти</a>
               </div>
             </div>
           </div>
@@ -331,9 +331,14 @@ Amet minim mollit non deserunt ullamco est sit aliqua dolor do<br>amet sint. Ame
 
     </section>
 
-    <section class="main_callback" style="background-image:url('img/bg_callback.png');">
+    <section class="main_callback" style="background-image:url('img/bg_callback.png');margin-top: 120px;">
+      
       <div class="container">
         <div class="main_callback_form_wrapper">
+          <div class="main_callback_form_wrapper_bot_icon"></div>
+          <div class="main_callback_form_wrapper_top_icon"></div>
+          <div class="main_callback_form_wrapper_top"></div>
+          <div class="main_callback_form_wrapper_bot"></div>
           <h2 class="text_dark text-center">Хочу оформить гостевой визит</h2>
           <form class="mt-5" action="index.html" method="post">
             <div class="main_callback_form_string">
@@ -367,7 +372,7 @@ Amet minim mollit non deserunt ullamco est sit aliqua dolor do<br>amet sint. Ame
   <footer>
     <div class="container">
       <div class="row">
-        <div class="col-12 col-lg-6">
+        <div class="col-12 col-lg-5">
           <div class="text_header_1 text-center text-md-left" style="margin-top:96px;">
             Наши контакты
           </div>
@@ -428,16 +433,14 @@ Amet minim mollit non deserunt ullamco est sit aliqua dolor do<br>amet sint. Ame
 </div>
 
         </div>
-        <div class="col-12 col-lg-6">
+        <div class="col-12 col-lg-6 ml-auto">
 
           <div class="footer_map_img_wrapper">
             <div class="footer_shadow">
 
             </div>
-  <div class="footer_mappin" style="background-image:url(img/MapPin.svg)">  </div>
-            <img class="footer_map_img" src="img/map.png" alt="">
 
-
+    <div id="map"></div>
 
           </div>
 
@@ -446,7 +449,7 @@ Amet minim mollit non deserunt ullamco est sit aliqua dolor do<br>amet sint. Ame
 
     </div>
   </footer>
-
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=4826a51f-3f6d-4ef0-bcba-1e0c500fe052" type="text/javascript"></script>
   <script type="text/javascript" src="js/template_scripts.js">
 
   </script>
